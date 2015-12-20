@@ -75,3 +75,7 @@ select, textarea {
     left: 209px;
     background-color: #272b30;
 }
+
+[ng-cloack]{
+    display: none;
+}
