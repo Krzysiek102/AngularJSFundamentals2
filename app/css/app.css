@@ -29,6 +29,12 @@ select, textarea {
   cursor:pointer;
 }
 
+.sessionThumbnail {
+    height:100%;
+    overflow: hidden;
+}
+
+
 .calendar{
     border: 1px solid #555;
     width: 238px;
