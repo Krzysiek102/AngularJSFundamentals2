@@ -5,13 +5,13 @@ eventsApp.controller('EventController',
         $scope.sortorder = 'name';
         eventData.getEvent().
             $promise.then(
-                function (event) {
-                    $scope.event = event;
-                    console.log(event);
-                },
-                function (response) {
-                    console.log(response);
-                }
+                    function (event) {
+                        $scope.event = event;
+                        console.log(event);
+                }).catch(
+                    function (response) {
+                        console.log(response);
+                    }
             );
 
         $scope.event = event = eventData.getEvent();
