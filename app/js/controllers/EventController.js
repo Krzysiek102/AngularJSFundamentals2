@@ -1,9 +1,9 @@
 ﻿'use strict';
 
 eventsApp.controller('EventController',
-    function EventController($scope, eventData, $log, $routeParams) {
+    function EventController($scope, eventData, $log, $route) {
         $scope.sortorder = 'name';
-        $scope.event = event = eventData.getEvent($routeParams.eventId);
+        $scope.event = $route.current.locals.event;
         $scope.upVoteSession = function (session) {
             session.upVoteCount++;
         };
