@@ -1,4 +1,5 @@
-﻿'use strict';
+﻿/* global inject */
+'use strict';
 
 describe('EditProfileControllerSpec', function () {
     var $controllerConstructor, scope, mockGravatarUrlBuilder;
@@ -17,7 +18,8 @@ describe('EditProfileControllerSpec', function () {
             });
         var email = "joe@joe.com";
         scope.getGravatarUrl(email);
-        expect(mockGravatarUrlBuilder.buildGravatarUrl.CalledWith(email)).toBe(true);
+        expect(mockGravatarUrlBuilder.buildGravatarUrl.calledWith(email)).toBe(true);
 
     });
 });
+
