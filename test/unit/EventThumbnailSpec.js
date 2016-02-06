@@ -15,7 +15,6 @@ describe('eventThumbnail', function() {
       el = angular.element('<event-thumbnail event="event" />');
       $compile(el)(scope);
       scope.$digest();  
-      console.log(el[0].outerHTML);
       
     }));
     
