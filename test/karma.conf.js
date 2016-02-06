@@ -18,7 +18,8 @@ module.exports = function (config) {
           '../test/lib/sinon-1.15.0.js',
           'js/**/*.js',
           '../test/unit/**/*.js',
-          '**/*.html'
+          '**/*.html',
+          'templates/directives/*.html'
         ],
 
         autoWatch: true,

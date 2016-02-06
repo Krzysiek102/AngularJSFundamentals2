@@ -4,17 +4,17 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider.when('/newEvent',
             {
-                templateUrl: 'templates/NewEvent.html',
+                templateUrl: '/templates/NewEvent.html',
                 controller: 'EditEventController'
             });
         $routeProvider.when('/events',
             {
-                templateUrl: 'templates/EventList.html',
+                templateUrl: '/templates/EventList.html',
                 controller: 'EventListController'
             });
         $routeProvider.when('/event/:eventId',
             {
-                templateUrl: 'templates/EventDetails.html',
+                templateUrl: '/templates/EventDetails.html',
                 controller: 'EventController',
                 resolve: {
                     event: function ($route, eventData) {
@@ -25,7 +25,7 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
             });
         $routeProvider.when('/sampleDirective',
             {
-                templateUrl: 'templates/SampleDirective.html',
+                templateUrl: '/templates/SampleDirective.html',
                 controller: 'SampleDirectiveController'
             });
         $routeProvider.otherwise({ redirectTo: '/events' });
