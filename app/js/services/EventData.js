@@ -1,4 +1,5 @@
-﻿eventsApp.factory('eventData', function ($resource) {
+﻿/* global eventsApp */
+eventsApp.factory('eventData', function ($resource) {
     var resource = $resource('/data/event/:id', { id: '@id' }, { "getAll": { method: "GET", isArray: true } });
     return {
         getEvent: function (eventId) {
