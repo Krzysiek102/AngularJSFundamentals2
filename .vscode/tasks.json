@@ -14,5 +14,6 @@
 }
 
 //server.bat
+//karma start test/karma.conf.js
 //webdriver-manager start
 //protractor test/protractor.conf.js
