@@ -12,3 +12,7 @@
         }
     ]
 }
+
+//server.bat
+//webdriver-manager start
+//protractor test/protractor.conf.js
